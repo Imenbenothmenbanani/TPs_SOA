@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat WebSocket</title>
+  </head>
+  <body>
+    <h2>Chat</h2>
+    <div id="messages"></div>
+    <input id="message" placeholder="Tape ton message..." />
+    <button onclick="sendMessage()">Envoyer</button>
+
+    <script>
+      const ws = new WebSocket("ws://localhost:8080");
+      const messagesDiv = document.getElementById("messages");
+
+      ws.onmessage = (event) => {
+        const data = JSON.parse(event.data);
+        if (data.chat_message) {
+          const msg = data.chat_message;
+          messagesDiv.innerHTML += `<p><b>${msg.sender_id}</b>: ${msg.content}</p>`;
+        }
+      };
+
+      function sendMessage() {
+        const input = document.getElementById("message");
+        const message = {
+          chat_message: {
+            id: Date.now().toString(),
+            room_id: "room1",
+            sender_id: "webclient",
+            content: input.value,
+          },
+        };
+        ws.send(JSON.stringify(message));
+        input.value = "";
+      }
+    </script>
+  </body>
+</html>
