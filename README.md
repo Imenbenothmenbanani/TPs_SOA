@@ -25,18 +25,18 @@ Ce projet illustre l'utilisation de **Kong** en mode **DB-less** comme passerell
 ## 📁 Structure du Projet
 tp-kong/
 │
-├── service-a/                    # Microservice Users (port 3001)
+├── service-a/                   
 │   ├── Dockerfile
 │   ├── package.json
 │   └── index.js
 │
-├── service-b/                    # Microservice Products (port 3002)
+├── service-b/                   
 │   ├── Dockerfile
 │   ├── package.json
 │   └── index.js
 │
-├── kong.yml                      # Fichier de configuration déclarative de Kong
-└── docker-compose.yml            # Configuration des services et du réseau
+├── kong.yml                      
+└── docker-compose.yml            
 
 ## ⚙️ Lancer le projet
 
