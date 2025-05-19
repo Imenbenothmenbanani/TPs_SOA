@@ -48,7 +48,7 @@ tp-kong/
 
 1. Cloner le dépôt :
 
-```bash
+bash
 git clone https://github.com/imenbenothmenbanani/TP8.git
 cd TP8
 
