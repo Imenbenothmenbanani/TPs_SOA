@@ -113,6 +113,7 @@ Vérifier les endpoints REST :
 curl http://localhost:3000/movies
 
 curl http://localhost:3000/tvshows
+
 ---
 ### Tester GraphQL avec Apollo Studio ou Postman
 Vérifier les messages Kafka (avec UI comme Kafdrop ou kafka-console-consumer)
