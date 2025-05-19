@@ -3,6 +3,9 @@ Ce projet illustre une architecture moderne basée sur les microservices, en com
 Il met en œuvre deux microservices indépendants — films et séries TV — qui communiquent via gRPC, tandis qu’une API Gateway centralise les accès via des endpoints RESTful et GraphQL.
 L’intégration d’Apache Kafka permet de gérer la production et la consommation d’événements liés à la création de contenus multimédias, assurant ainsi une architecture réactive et scalable.
 
+![ChatGPT Image 19 mai 2025, 19_47_18](https://github.com/user-attachments/assets/c333760c-2169-409d-bef7-a464709f95d4)
+
+
 Ce TP a pour but de vous familiariser avec l’écosystème des microservices, tout en explorant l’usage combiné de Node.js, gRPC, GraphQL, et Kafka dans une même solution.
 ---
 
