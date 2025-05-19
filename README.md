@@ -2,11 +2,6 @@
 
 Ce projet illustre l'utilisation de **Kong** en mode **DB-less** comme passerelle d’API dynamique pour gérer deux microservices (`Users` et `Products`) dans un environnement **Dockerisé**. Les services sont développés en **Node.js** et orchestrés avec **Docker Compose**.
 
-
-## Project Structure
-
-tp-kong/ ├── service-a/ │ ├── Dockerfile │ ├── package.json │ ├── index.js ├── service-b/ │ ├── Dockerfile │ ├── package.json │ ├── index.js ├── kong.yml ├── docker-compose.yml
-
 ---
 
 ## 🎯 Objectifs
@@ -30,19 +25,18 @@ tp-kong/ ├── service-a/ │ ├── Dockerfile │ ├── package.jso
 ## 📁 Structure du Projet
 tp-kong/
 │
-├── service-a/ # Microservice Users (port 3001)
-│ ├── Dockerfile
-│ ├── package.json
-│ └── index.js
+├── service-a/                    # Microservice Users (port 3001)
+│   ├── Dockerfile
+│   ├── package.json
+│   └── index.js
 │
-├── service-b/ # Microservice Products (port 3002)
-│ ├── Dockerfile
-│ ├── package.json
-│ └── index.js
+├── service-b/                    # Microservice Products (port 3002)
+│   ├── Dockerfile
+│   ├── package.json
+│   └── index.js
 │
-├── kong.yml # Fichier de configuration déclarative de Kong
-└── docker-compose.yml # Configuration des services et réseau
----
+├── kong.yml                      # Fichier de configuration déclarative de Kong
+└── docker-compose.yml            # Configuration des services et du réseau
 
 ## ⚙️ Lancer le projet
 
