@@ -37,7 +37,7 @@
 → [https://kafka.apache.org/downloads](https://kafka.apache.org/downloads)
 
 ### 3. Installer les dépendances :
-```bash
+
 npm install express @apollo/server @grpc/grpc-js @grpc/proto-loader body-parser cors kafkajs
 ---
  ### 4. Démarrer les services (dans cet ordre) :
