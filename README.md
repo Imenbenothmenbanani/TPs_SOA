@@ -50,34 +50,30 @@ tp-kong/
 
 ```bash
 git clone https://github.com/imenbenothmenbanani/TP8.git
-cd tp8Lancer les conteneurs avec Docker Compose :
+cd TP8
 
-
+Lancer les conteneurs avec Docker Compose :
 docker compose up --build -d
-Vérifier que les services sont bien démarrés :
 
+Vérifier que les services sont bien démarrés :
 docker compose ps
+---
 🚀 Tester les microservices via Kong
 Une fois les conteneurs démarrés :
-
-Tester le service Users :
-
+1 - Tester le service Users :
 curl http://localhost:8000/users
-Tester le service Products :
 
-
+2 - Tester le service Products :
 curl http://localhost:8000/products
-Vous devriez recevoir des réponses JSON avec des données simulées.
 
+3 - Vous devriez recevoir des réponses JSON avec des données simulées.
+---
 🛠️ API d’administration de Kong
 Kong expose une API d'administration sur le port 8001.
 
 Lister les services enregistrés :
-
-bash
-Copier
-Modifier
 curl http://localhost:8001/services
+---
 📄 Fichiers à étudier
 service-a/Dockerfile : Construction du service A (Users)
 
@@ -86,7 +82,7 @@ service-b/Dockerfile : Construction du service B (Products)
 kong.yml : Définition des routes et services de Kong
 
 docker-compose.yml : Définition des conteneurs et réseau
-
+---
 ✅ À rendre
 Fichiers commentés : Dockerfile, kong.yml, docker-compose.yml
 
