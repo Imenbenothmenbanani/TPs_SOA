@@ -1,6 +1,9 @@
 # TP7 : Microservices avec REST, GraphQL, gRPC et Kafka
+Ce projet illustre une architecture moderne basée sur les microservices, en combinant plusieurs technologies pour une communication inter-services efficace, une exposition d’API flexible, et une gestion d’événements asynchrone.
+Il met en œuvre deux microservices indépendants — films et séries TV — qui communiquent via gRPC, tandis qu’une API Gateway centralise les accès via des endpoints RESTful et GraphQL.
+L’intégration d’Apache Kafka permet de gérer la production et la consommation d’événements liés à la création de contenus multimédias, assurant ainsi une architecture réactive et scalable.
 
-
+Ce TP a pour but de vous familiariser avec l’écosystème des microservices, tout en explorant l’usage combiné de Node.js, gRPC, GraphQL, et Kafka dans une même solution.
 ---
 
 ## 🎯 Objectifs du TP
