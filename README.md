@@ -88,13 +88,13 @@ Fichiers commentés : Dockerfile, kong.yml, docker-compose.yml
 
 Captures d’écran des résultats curl (/users, /products, /services)
 
-Lancer les conteneurs avec Docker Compose :
+ 1 .Lancer les conteneurs avec Docker Compose :
+- docker compose up --build -d
 
-docker compose up --build -d
-Vérifier que les services sont bien démarrés :
+2. Vérifier que les services sont bien démarrés :
+ - docker compose ps
 
-docker compose ps
-🚀 Tester les microservices via Kong
+## 🚀 Tester les microservices via Kong
 Une fois les conteneurs démarrés :
 
 Tester le service Users :
@@ -108,10 +108,11 @@ Vous devriez recevoir des réponses JSON avec des données simulées.
 🛠️ API d’administration de Kong
 Kong expose une API d'administration sur le port 8001.
 
-Lister les services enregistrés :
-
+** Lister les services enregistrés :
 curl http://localhost:8001/services
-📄 Fichiers à étudier
+
+## 📄 Fichiers à étudier
+
 service-a/Dockerfile : Construction du service A (Users)
 
 service-b/Dockerfile : Construction du service B (Products)
