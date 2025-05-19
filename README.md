@@ -109,7 +109,9 @@ kafka-topics --create --topic movies_topic --bootstrap-server localhost:9092 --p
 Lancer les 3 services (films, séries, gateway)
 
 Vérifier les endpoints REST :
+
 curl http://localhost:3000/movies
+
 curl http://localhost:3000/tvshows
 ---
 ### Tester GraphQL avec Apollo Studio ou Postman
