@@ -58,7 +58,7 @@ docker compose up --build -d
 Vérifier que les services sont bien démarrés :
 docker compose ps
 ---
-🚀 Tester les microservices via Kong
+## 🚀 Tester les microservices via Kong
 Une fois les conteneurs démarrés :
 1 - Tester le service Users :
 curl http://localhost:8000/users
